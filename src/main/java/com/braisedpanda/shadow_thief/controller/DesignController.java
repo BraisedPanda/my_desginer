@@ -17,6 +17,7 @@ public class DesignController {
     public ModelAndView index(){
         return new ModelAndView("index");
     }
+
     @RequestMapping("/about")
     public ModelAndView about(){
         return new ModelAndView("energen/about");
