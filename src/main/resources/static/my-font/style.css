@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'myfont';
+  src:  url('fonts/myfont.eot?z0nfbf');
+  src:  url('fonts/myfont.eot?z0nfbf#iefix') format('embedded-opentype'),
+    url('fonts/myfont.ttf?z0nfbf') format('truetype'),
+    url('fonts/myfont.woff?z0nfbf') format('woff'),
+    url('fonts/myfont.svg?z0nfbf#myfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'myfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-myfont .path1:before {
+  content: "\e905";
+  color: rgb(66, 74, 113);
+}
+.icon-myfont .path2:before {
+  content: "\e906";
+  margin-left: -1.001953125em;
+  color: rgb(6, 12, 21);
+}
+.icon-myfont .path3:before {
+  content: "\e907";
+  margin-left: -1.001953125em;
+  color: rgb(218, 193, 180);
+}
+.icon-myfont .path4:before {
+  content: "\e908";
+  margin-left: -1.001953125em;
+  color: rgb(127, 113, 135);
+}
+.icon-myfont .path5:before {
+  content: "\e909";
+  margin-left: -1.001953125em;
+  color: rgb(27, 27, 52);
+}
