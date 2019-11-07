@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'myfont';
-  src:  url('fonts/myfont.eot?z0nfbf');
-  src:  url('fonts/myfont.eot?z0nfbf#iefix') format('embedded-opentype'),
-    url('fonts/myfont.ttf?z0nfbf') format('truetype'),
-    url('fonts/myfont.woff?z0nfbf') format('woff'),
-    url('fonts/myfont.svg?z0nfbf#myfont') format('svg');
+  src:  url('fonts/myfont.eot?x1hf0u');
+  src:  url('fonts/myfont.eot?x1hf0u#iefix') format('embedded-opentype'),
+    url('fonts/myfont.ttf?x1hf0u') format('truetype'),
+    url('fonts/myfont.woff?x1hf0u') format('woff'),
+    url('fonts/myfont.svg?x1hf0u#myfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,27 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-myfont .path1:before {
-  content: "\e905";
-  color: rgb(66, 74, 113);
+
+.icon-QQ:before {
+  content: "\e900";
 }
-.icon-myfont .path2:before {
-  content: "\e906";
-  margin-left: -1.001953125em;
-  color: rgb(6, 12, 21);
+.icon-Address:before {
+  content: "\e901";
 }
-.icon-myfont .path3:before {
-  content: "\e907";
-  margin-left: -1.001953125em;
-  color: rgb(218, 193, 180);
+.icon-Phone:before {
+  content: "\e902";
 }
-.icon-myfont .path4:before {
-  content: "\e908";
-  margin-left: -1.001953125em;
-  color: rgb(127, 113, 135);
+.icon-Wechat:before {
+  content: "\e903";
 }
-.icon-myfont .path5:before {
-  content: "\e909";
-  margin-left: -1.001953125em;
-  color: rgb(27, 27, 52);
+.icon-Email:before {
+  content: "\e904";
 }

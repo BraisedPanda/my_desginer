@@ -20,27 +20,27 @@ public class DesignController {
 
     @RequestMapping("/about")
     public ModelAndView about(){
-        return new ModelAndView("energen/about");
+        return new ModelAndView("zuopingji/about");
     }
     @RequestMapping("/treatments")
     public ModelAndView treatments(){
-        return new ModelAndView("energen/treatments");
+        return new ModelAndView("zuopingji/treatments");
     }
-    @RequestMapping("/specialists")
+    @RequestMapping("/my_design")
     public ModelAndView specialists(){
-        return new ModelAndView("energen/specialists");
+        return new ModelAndView("zuopingji/my_design");
     }
-    @RequestMapping("/pricing")
+    @RequestMapping("/my_illustration")
     public ModelAndView pricing(){
-        return new ModelAndView("energen/pricing");
+        return new ModelAndView("zuopingji/my_illustration");
     }
-    @RequestMapping("/blog")
+    @RequestMapping("/my_gif")
     public ModelAndView blog(){
-        return new ModelAndView("energen/blog");
+        return new ModelAndView("zuopingji/my_gif");
     }
     @RequestMapping("/contact")
     public ModelAndView contact(){
-        return new ModelAndView("energen/contact");
+        return new ModelAndView("zuopingji/contact");
     }
 
 
