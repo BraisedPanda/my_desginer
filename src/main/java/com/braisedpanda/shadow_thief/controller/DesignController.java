@@ -28,7 +28,7 @@ public class DesignController {
     }
     @RequestMapping("/my_design")
     public ModelAndView specialists(){
-        return new ModelAndView("zuopingji/my_design");
+        return new ModelAndView("zuopingji/illustration_1");
     }
     @RequestMapping("/my_illustration")
     public ModelAndView pricing(){
@@ -40,7 +40,7 @@ public class DesignController {
     }
     @RequestMapping("/contact")
     public ModelAndView contact(){
-        return new ModelAndView("zuopingji/contact");
+        return new ModelAndView("zuopingji/illustration_1");
     }
 
 
