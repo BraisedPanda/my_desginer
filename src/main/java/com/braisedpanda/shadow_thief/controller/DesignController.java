@@ -22,13 +22,13 @@ public class DesignController {
     public ModelAndView about(){
         return new ModelAndView("zuopingji/about");
     }
-    @RequestMapping("/treatments")
-    public ModelAndView treatments(){
-        return new ModelAndView("zuopingji/treatments");
+    @RequestMapping("/yunzhangApp")
+    public ModelAndView yunzhangApp(){
+        return new ModelAndView("design/yunzhangApp");
     }
     @RequestMapping("/my_design")
     public ModelAndView specialists(){
-        return new ModelAndView("zuopingji/illustration_1");
+        return new ModelAndView("zuopingji/my_design");
     }
     @RequestMapping("/my_illustration")
     public ModelAndView pricing(){
@@ -40,8 +40,11 @@ public class DesignController {
     }
     @RequestMapping("/contact")
     public ModelAndView contact(){
-        return new ModelAndView("zuopingji/illustration_1");
+        return new ModelAndView("zuopingji/contact");
     }
-
+    @RequestMapping("/my_design2")
+    public ModelAndView my_design2(){
+        return new ModelAndView("zuopingji/my_design2");
+    }
 
 }
