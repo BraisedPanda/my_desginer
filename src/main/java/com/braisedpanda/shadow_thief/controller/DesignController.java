@@ -40,7 +40,7 @@ public class DesignController {
     }
     @RequestMapping("/contact")
     public ModelAndView contact(){
-        return new ModelAndView("zuopingji/contact");
+        return new ModelAndView("zuopingji/contact2");
     }
     @RequestMapping("/my_design2")
     public ModelAndView my_design2(){
