@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <title>西艽野 - UI设计师 - 个人主页</title>
     <meta charset="utf-8">
@@ -155,7 +155,7 @@
 		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		              	<strong class="number" data-number="2560">0</strong>
+		              	<strong class="number" id="visitors" th:data-number="${visitors}">0</strong>
 		              	<span>浏览次数</span>
 		              </div>
 		            </div>
@@ -163,16 +163,16 @@
 		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		              	<strong class="number" data-number="66">0</strong>
-		              	<span>点赞人数</span>
+		              	<strong class="number"  th:data-number="${likes}" >0</strong>
+		              	<span>点赞次数</span>
 		              </div>
 		            </div>
 		          </div>
 		          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		              	<strong class="number" data-number="50">0</strong>
-		              	<span>我的作品数</span>
+		              	<strong class="number" th:data-number="${products}">0</strong>
+		              	<span>作品总数</span>
 		              </div>
 		            </div>
 		          </div>
@@ -219,7 +219,7 @@
       </div>
     </footer>
 
-  
+
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -240,7 +240,6 @@
   <script src="js/scrollax.min.js"></script>
 
   <script src="js/main.js"></script>
-
 
   </body>
 </html>

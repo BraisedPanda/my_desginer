@@ -3,7 +3,18 @@
  	easing: 'slide'
  });
 
+ $("#love_illustration").click(function () {
+     $.get('love_illustration');
+ });
+ $("#love_gif").click(function () {
+     $.get('love_gif');
+ });
+ $("#love_design").click(function () {
+     $.get('love_design');
+ });
+
 (function($) {
+
 
 	"use strict";
 
@@ -145,7 +156,7 @@
 				$('.number').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
+						// console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,
@@ -255,12 +266,12 @@
   });
 
 
-  $('.appointment_date').datepicker({
-	  'format': 'm/d/yyyy',
-	  'autoclose': true
-	});
-
-	$('.appointment_time').timepicker();
+  // $('.appointment_date').datepicker({
+	//   'format': 'm/d/yyyy',
+	//   'autoclose': true
+	// });
+  //
+	// $('.appointment_time').timepicker();
 
 
 })(jQuery);
