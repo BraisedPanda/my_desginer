@@ -34,7 +34,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="my-font/style.css">
+	  <style>
 
+		  #title:hover{
+			  color: #D9B30A;
+		  }
+	  </style>
 
   </head>
   <body>
@@ -42,16 +47,20 @@
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 
-			<a class="navbar-brand" href="index"><span class="flaticon-lotus"></span>西艽野</a>
+			<a class="navbar-brand" href="index" id="title"><span class="flaticon-lotus"></span>西艽野</a>
+
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 
-	          <li class="nav-item active"><a href="/index" class="nav-link">主页</a></li>
-	          <li class="nav-item"><a href="#my_prodect" class="nav-link">我的作品</a></li>
-	          <li class="nav-item"><a href="/contact" class="nav-link">联系方式</a></li>
+	          <li class="nav-item active"><a href="/index" class="nav-link" style="color: #D9BF77">首页</a></li>
+	          <!--<li class="nav-item"><a href="#my_prodect" class="nav-link" style="color: white">我的作品</a></li>-->
+			  <li class="nav-item "><a href="my_gif" class="nav-link" style="color: white">动图鉴赏</a></li>
+			  <li class="nav-item"><a href="my_illustration" class="nav-link" style="color: white">插画鉴赏</a></li>
+			  <li class="nav-item "><a href="my_design" class="nav-link" style="color: white">设计鉴赏</a></li>
+	          <li class="nav-item"><a href="/contact" class="nav-link" style="color: white">联系方式</a></li>
 
 	        </ul>
 	      </div>
@@ -59,34 +68,34 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap js-fullheight" style="background-image: url('images/bg1.jpg');" >
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-          <div class="col-md-10 ftco-animate text-center">
+          <div class="col-md-10 ftco-animate text-center" style="top: -100px">
           	<!--<div class="icon">-->
 	          	<span class="flaticon-lotus" style="font-size: 80px;color:#D9BF77"></span>
           	<!--</div>-->
 			  <hr style="height: 1px;margin-top: -28px"  width="50%" color="#D9BF77" size="5" />
-			  <h1>设计 &amp; 简约</h1>
+			  <h1 style="color: white">设计 &amp; 简约</h1>
             <div class="row justify-content-center">
 	            <div class="col-md-7 mb-3">
-	            	<p>一切随心,有心去感悟空间</p>
-					<p>将设计融于自然,将生活带入悠闲自在的情境</p>
+	            	<p style="color: white">一切随心,有心去感悟空间</p>
+					<p style="color: white">将设计融于自然,将生活带入悠闲自在的情境</p>
 
 	            </div>
 	          </div>
             <p>
             	<a href="#my_prodect" class="btn btn-primary p-3 px-5 py-4 mr-md-2" >我的作品</a>
-            	<a href="https://www.zcool.com.cn/u/16374651" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2" target="_blank">我的站酷</a>
-				<!--<a href="https://www.ui.cn/" class="btn btn-outline-secondary p-3 px-5 py-4 ml-md-2" target="_blank">我的UI中国</a>-->
+            	<!--<a href="https://www.zcool.com.cn/u/16374651" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2" target="_blank">我的站酷</a>-->
+				<a href="https://www.ui.cn/" class="btn btn-secondary p-3 px-5 py-4 ml-md-2" target="_blank">我的UI中国</a>
             </p>
           </div>
         </div>
       </div>
     </section>
 		
-		<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
+		<section class="ftco-section ftco-intro" style="background-image: url(images/bg_1.png);" >
 			<div class="container">
 				<div class="row justify-content-end">
 					<div class="col-md-6">
@@ -106,7 +115,7 @@
 			</div>
 		</section>
 
-		<section class="ftco-section ftco-no-pt ftco-no-pb" id="my_prodect">
+		<section class="ftco-section ftco-no-pt ftco-no-pb" id="my_prodect" data-stellar-background-ratio="0.5">
 			<div class="container" >
 				<div class="row no-gutters">
 					<div class="col-md-4 d-flex align-items-stretch">
@@ -119,8 +128,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 d-flex align-items-stretch">
-						<div class="offer-deal active text-center px-2 px-lg-5">
+					<div class="col-md-4 d-flex align-items-stretch" >
+						<div class="offer-deal active text-center px-2 px-lg-5" style="background: rgb(246, 247, 241)">
 							<div class="img" style="background-image: url(images/index/2.jpg);"></div>
 							<div class="text mt-4">
 								<h3 class="mb-4">设计作品</h3>
@@ -188,21 +197,21 @@
 
     <footer class="ftco-footer ftco-section" style="background-color: rgb(247, 243, 240)">
       <div class="container">
-        <div class="row d-flex">
+        <!--<div class="row d-flex">-->
 
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-				<h2 class="ftco-heading-2" id="footer-font" >Contact Information:</h2>
-              <div class="block-23 mb-3" >
-                <ul>
-					<li><a href="javascript:void(0)"><span class="text" style="color: rgb(216, 179, 100)"><span class="icon-Address" style="color: rgb(216, 179, 100)"></span>&nbsp;&nbsp;&nbsp;中国 安徽 合肥</span></a></li>
-					<li><a href="javascript:void(0)"><span class="text" style="color: rgb(216, 179, 100)"><span class="icon-Phone" style="color: rgb(216, 179, 100)"></span>&nbsp;&nbsp;&nbsp;183 3213 1234</span></a></li>
-					<li><a href="javascript:void(0)"><span class="text" style="color: rgb(216, 179, 100)"><span class="icon-Email" style="color: rgb(216, 179, 100)"></span>&nbsp;&nbsp;&nbsp;yuluomuchen@outlook.com</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+          <!--<div class="col-md">-->
+            <!--<div class="ftco-footer-widget mb-4">-->
+				<!--<h2 class="ftco-heading-2" id="footer-font" >Contact Information:</h2>-->
+              <!--<div class="block-23 mb-3" >-->
+                <!--<ul>-->
+					<!--<li><a href="javascript:void(0)"><span class="text" style="color: rgb(216, 179, 100)"><span class="icon-Address" style="color: rgb(216, 179, 100)"></span>&nbsp;&nbsp;&nbsp;中国 安徽 合肥</span></a></li>-->
+					<!--<li><a href="javascript:void(0)"><span class="text" style="color: rgb(216, 179, 100)"><span class="icon-Phone" style="color: rgb(216, 179, 100)"></span>&nbsp;&nbsp;&nbsp;183 3213 1234</span></a></li>-->
+					<!--<li><a href="javascript:void(0)"><span class="text" style="color: rgb(216, 179, 100)"><span class="icon-Email" style="color: rgb(216, 179, 100)"></span>&nbsp;&nbsp;&nbsp;yuluomuchen@outlook.com</span></a></li>-->
+                <!--</ul>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
         <div class="row">
           <div class="col-md-12 text-center">
 
@@ -211,7 +220,7 @@
               Copyright &copy;<script>
                 document.write(new Date().getFullYear());
 
-			</script> All rights reserved | This template is made with <i class="glyphicon glyphicon-grain" aria-hidden="true"></i> by <span style="color: indianred">❤</span><a href="" target="_blank">&nbsp;BraisedPanda</a>
+			</script>All rights reserved |  皖ICP备19016545号 |This template is made with <i class="glyphicon glyphicon-grain" aria-hidden="true"></i> by <span style="color: indianred">❤</span><a href="" target="_blank">&nbsp;BraisedPanda</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
