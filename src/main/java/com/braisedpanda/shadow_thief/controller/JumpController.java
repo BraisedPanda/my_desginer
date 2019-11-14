@@ -59,15 +59,7 @@ public class JumpController {
         return new ModelAndView("design/yunzhangApp");
     }
 
-    @RequestMapping("/my_gif")
-    public ModelAndView my_gif(ModelAndView modelAndView){
-        Total total  = designService.getTotal();
-        int gif = total.getGif();
-        modelAndView.setViewName("zuopingji/my_gif");
-        modelAndView.addObject("gif",gif);
-        return modelAndView;
 
-    }
 
 
 
