@@ -50,9 +50,9 @@ public class DesignController {
         return modelAndView;
     }
 
-    @RequestMapping("/about")
+    @RequestMapping("/demo")
     public ModelAndView about(){
-        return new ModelAndView("zuopingji/about");
+        return new ModelAndView("demo");
     }
     @RequestMapping("/yunzhangApp")
     public ModelAndView yunzhangApp(){
@@ -93,8 +93,12 @@ public class DesignController {
         return new ModelAndView("zuopingji/contact2");
     }
     @RequestMapping("/my_design2")
-    public ModelAndView my_design2(){
-        return new ModelAndView("zuopingji/my_design2");
+    public ModelAndView my_design2(ModelAndView modelAndView){
+        Total total  = designService.getTotal();
+        int design = total.getDesign();
+        modelAndView.addObject("design",design);
+        modelAndView.setViewName("zuopingji/my_design2");
+        return modelAndView;
     }
 
     @ResponseBody

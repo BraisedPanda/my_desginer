@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <title>报错页面</title>
+    <title>页面不存在了呢~</title>
+    <link rel="stylesheet" href="error/css/style.css">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
-    <style>
-        body{
-            padding:0;
-            margin: 0;
-        }
-        .container1{
-            margin-left: 40%;
-            margin-top: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+<style>
 
+
+</style>
 <body>
 
 
-    <div class="container1">
-    <h1>404</h1>
-    <p>这个页面还在施工中呢...</p>
-    <p><a class="btn btn-primary btn-middle" href="index" role="button">返回首页</a></p>
+<div class="container">
+    <div class="row  justify-content-center">
+
+        <div class="col-md-9  text-center">
+            <button type="button" style="margin-top: 480px" class="btn btn-lg btn-success" disabled="disabled">页面找不到啦~点击图片返回首页</button>
+
+        </div>
+        <a href="index" id="svgContainer"></a>
     </div>
 
+</div>
 
 
+
+
+<script src='error/js/eEjVBX.js'></script>
+<script src='error/js/MvBBBj.js'></script>
+<script src="error/js/script.js"></script>
 
 <script src="js/jquery.min.js"></script>
-<script th:src="@{/js/bootstrap.min.js}"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
