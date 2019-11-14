@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/side.css">
+
   </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-light-2" id="ftco-navbar">
@@ -39,8 +40,8 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item"><a href="index" class="nav-link">首页</a></li>
 	          <li class="nav-item "><a href="my_gif" class="nav-link">动图鉴赏</a></li>
-	          <li class="nav-item"><a href="my_illustration" class="nav-link">插画鉴赏</a></li>
-	          <li class="nav-item active"><a href="my_design" class="nav-link">设计鉴赏</a></li>
+	          <li class="nav-item"><a href="my_illustration?page=1" class="nav-link">插画鉴赏</a></li>
+	          <li class="nav-item active"><a href="my_design?page=1" class="nav-link">设计鉴赏</a></li>
 	          <li class="nav-item"><a href="contact" class="nav-link">联系方式</a></li>
 
 	        </ul>
@@ -84,9 +85,10 @@
     <section class="ftco-section bg-light">
       <div class="container">
         <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
+
+          <div class="col-md-4 d-flex ftco-animate" th:each="designList : ${designList}">
           	<div class="blog-entry justify-content-end">
-                <a href="yunzhangApp" class="gallery  img d-flex align-items-center" style="background-image: url('images/my-design/small_1.png');">
+                <a href="yunzhangApp" class="gallery  img d-flex align-items-center" th:style="${designList.url}">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <span class="icon-search"></span>
                     </div>
@@ -94,146 +96,35 @@
                 <div class="text p-4 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4">
               		<div class="one">
-              			<span class="day">20</span>
+              			<span class="day">[[${designList.day}]]</span>
               		</div>
               		<div class="two">
-              			<span class="yr">2019</span>
-              			<span class="mos">3月</span>
+              			<span class="yr">[[${designList.year}]]</span>
+              			<span class="mos">[[${designList.month}]]</span>
               		</div>
               	</div>
-                <h3 class="heading mt-2"><a href="javascript:void(0)">云掌教育App</a></h3>
-                <p>全新的教育平台，不一样的用户体验
+                <h3 class="heading mt-2"><a href="javascript:void(0)">[[${designList.title}]]</a></h3>
+                <p>[[${designList.describe}]]
                     　</p>
               </div>
             </div>
           </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="yunzhangApp" class="gallery  img d-flex align-items-center" style="background-image: url('images/my-design/small_2.png');">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                    <div class="text p-4 float-right d-block">
-                        <div class="d-flex align-items-center pt-2 mb-4">
-                            <div class="one">
-                                <span class="day">20</span>
-                            </div>
-                            <div class="two">
-                                <span class="yr">2019</span>
-                                <span class="mos">3月</span>
-                            </div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="javascript:void(0)">云掌教育App</a></h3>
-                        <p>全新的教育平台，不一样的用户体验
-                            　</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="yunzhangApp" class="gallery  img d-flex align-items-center" style="background-image: url('images/my-design/small_3.png');">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                    <div class="text p-4 float-right d-block">
-                        <div class="d-flex align-items-center pt-2 mb-4">
-                            <div class="one">
-                                <span class="day">20</span>
-                            </div>
-                            <div class="two">
-                                <span class="yr">2019</span>
-                                <span class="mos">3月</span>
-                            </div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="javascript:void(0)">云掌教育App</a></h3>
-                        <p>全新的教育平台，不一样的用户体验
-                            　</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="yunzhangApp" class="gallery  img d-flex align-items-center" style="background-image: url('images/my-design/small_4.png');">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                    <div class="text p-4 float-right d-block">
-                        <div class="d-flex align-items-center pt-2 mb-4">
-                            <div class="one">
-                                <span class="day">20</span>
-                            </div>
-                            <div class="two">
-                                <span class="yr">2019</span>
-                                <span class="mos">3月</span>
-                            </div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="javascript:void(0)">云掌教育App</a></h3>
-                        <p>全新的教育平台，不一样的用户体验
-                            　</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="yunzhangApp" class="gallery  img d-flex align-items-center" style="background-image: url('images/my-design/small_5.png');">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                    <div class="text p-4 float-right d-block">
-                        <div class="d-flex align-items-center pt-2 mb-4">
-                            <div class="one">
-                                <span class="day">20</span>
-                            </div>
-                            <div class="two">
-                                <span class="yr">2019</span>
-                                <span class="mos">3月</span>
-                            </div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="javascript:void(0)">云掌教育App</a></h3>
-                        <p>全新的教育平台，不一样的用户体验
-                            　</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="yunzhangApp" class="gallery  img d-flex align-items-center" style="background-image: url('images/my-design/small_1.png');">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                    <div class="text p-4 float-right d-block">
-                        <div class="d-flex align-items-center pt-2 mb-4">
-                            <div class="one">
-                                <span class="day">20</span>
-                            </div>
-                            <div class="two">
-                                <span class="yr">2019</span>
-                                <span class="mos">3月</span>
-                            </div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="javascript:void(0)">云掌教育App</a></h3>
-                        <p>全新的教育平台，不一样的用户体验
-                            　</p>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
         <div class="row mt-5">
           <div class="col text-center">
             <div class="block-27">
               <ul>
-                  <li><a href="my_design">1</a></li>
-                  <li class="active"><span>2</span></li>
-
-                <li><a href="javascript:void(0)">3</a></li>
-                <li><a href="javascript:void(0)">4</a></li>
-                <li><a href="javascript:void(0)">5</a></li>
+                  <li class="page"><a th:href="@{/my_design?page=1}" th:if="${startPage}!=1">首页</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${startPage}-2)}" th:if="${startPage}-2>0">[[${startPage}-2]]</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${startPage}-1)}" th:if="${startPage}-1>0">[[${startPage}-1]]</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${startPage})}" >[[${startPage}]]</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${startPage}+1)}" th:if="${startPage}+1<=${totalPage}">[[${startPage}+1]]</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${startPage}+2)}" th:if="${startPage}+2<=${totalPage}">[[${startPage}+2]]</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${startPage}+3)}" th:if="${startPage}+3<=${totalPage}">[[${startPage}+3]]</a></li>
+                  <li class="page"><a th:href="@{/my_design?page={startPage}(startPage=${totalPage})}" th:if="${startPage}!=${totalPage}">尾页</a></li>
 
               </ul>
             </div>

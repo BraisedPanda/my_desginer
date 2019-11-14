@@ -12,7 +12,13 @@
  $("#love_design").click(function () {
      $.get('love_design');
  });
-
+$(".page").mouseenter(function () {
+	
+	$(this).attr("class","active");
+});
+ $(".page").mouseleave(function () {
+     $(this).attr("class","");
+ });
 (function($) {
 
 

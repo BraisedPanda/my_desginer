@@ -1,17 +1,12 @@
 package com.braisedpanda.shadow_thief.service;
 
-import com.braisedpanda.shadow_thief.model.Total;
+
+import com.braisedpanda.shadow_thief.model.dto.DesignDto;
 import org.springframework.stereotype.Component;
+
+
 
 @Component
 public interface DesignService {
-    Total getTotal();
-
-    void addVisitors();
-
-    void love_illustration();
-
-    void love_design();
-
-    void love_gif();
+    DesignDto list(int page);
 }
