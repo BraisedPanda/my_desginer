@@ -11,29 +11,29 @@
     <!---->
 
 
-	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
 
 
 	<!--动画插件-->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" th:href="@{/css/animate.css}">
 
 
 	<!--灯箱效果-->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" th:href="@{/css/magnific-popup.css}">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" th:href="@{/css/aos.css}">
 	<!--https://ionicons.com/图标库-->
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" th:href="@{/css/ionicons.min.css}">
 
 
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" th:href="@{/css/index.css}">
 	<!--图标库-->
-    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" th:href="@{/css/flaticon.css}">
 
-    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" th:href="@{/css/icomoon.css}">
 
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="my-font/style.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{/my-font/style.css}">
 	  <style>
 
 		  #title:hover{
@@ -57,9 +57,9 @@
 
 	          <li class="nav-item active"><a href="/index" class="nav-link" style="color: #D9BF77">首页</a></li>
 	          <!--<li class="nav-item"><a href="#my_prodect" class="nav-link" style="color: white">我的作品</a></li>-->
-			  <li class="nav-item "><a href="my_gif?page=1" class="nav-link" style="color: white">动图鉴赏</a></li>
-			  <li class="nav-item"><a href="my_illustration?page=1" class="nav-link" style="color: white">插画鉴赏</a></li>
-			  <li class="nav-item "><a href="my_design?page=1" class="nav-link" style="color: white">设计鉴赏</a></li>
+			  <li class="nav-item "><a href="animation/1" class="nav-link" style="color: white">动图鉴赏</a></li>
+			  <li class="nav-item"><a href="illustrations/1" class="nav-link" style="color: white">插画鉴赏</a></li>
+			  <li class="nav-item "><a href="design/1" class="nav-link" style="color: white">设计鉴赏</a></li>
 	          <li class="nav-item"><a href="/contact" class="nav-link" style="color: white">联系方式</a></li>
 
 	        </ul>
@@ -124,7 +124,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4">动图鉴赏</h3>
 								<p class="mb-5">那些光阴的故事，全被折进了书页的某个章节，无论这个世界对你怎样，都要一如既往的努力、勇敢、充满希望</p>
-								<p><a href="my_gif" class="btn btn-white px-4 py-3"> 点击查看 <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<p><a href="animation/1" class="btn btn-white px-4 py-3"> 点击查看 <span class="ion-ios-arrow-round-forward"></span></a></p>
 							</div>
 						</div>
 					</div>
@@ -134,7 +134,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4">设计作品</h3>
 								<p class="mb-5">我们对生命的迷恋来自于对它的信任，一切浪漫的追寻与旖旎情事在这条可信的曲径上，发出了光</p>
-								<p><a href="my_design" class="btn btn-white px-4 py-3"> 点击查看 <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<p><a href="design/1" class="btn btn-white px-4 py-3"> 点击查看 <span class="ion-ios-arrow-round-forward"></span></a></p>
 							</div>
 						</div>
 					</div>
@@ -144,7 +144,7 @@
 							<div class="text mt-4">
 								<h3 class="mb-4">插画鉴赏</h3>
 								<p class="mb-5">我们仍需共生命的慷慨，与繁华相爱，即使岁月以刻薄与荒芜相欺，仍能不沾染那一身的世故  </p>
-								<p><a href="my_illustration" class="btn btn-white px-4 py-3"> 点击查看 <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<p><a href="illustrations/1" class="btn btn-white px-4 py-3"> 点击查看 <span class="ion-ios-arrow-round-forward"></span></a></p>
 							</div>
 						</div>
 					</div>
@@ -234,21 +234,21 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
+  <script th:src="@{/js/jquery.min.js}"></script>
+  <script th:src="@{/js/jquery-migrate-3.0.1.min.js}"></script>
+  <script th:src="@{/js/popper.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+  <script th:src="@{/js/jquery.easing.1.3.js}"></script>
+  <script th:src="@{/js/jquery.waypoints.min.js}"></script>
+  <script th:src="@{/js/jquery.stellar.min.js}"></script>
+  <script th:src="@{/js/owl.carousel.min.js}"></script>
+  <script th:src="@{/js/jquery.magnific-popup.min.js}"></script>
+  <script th:src="@{/js/aos.js}"></script>
+  <script th:src="@{/js/jquery.animateNumber.min.js}"></script>
 
-  <script src="js/scrollax.min.js"></script>
+  <script th:src="@{/js/scrollax.min.js}"></script>
 
-  <script src="js/main.js"></script>
+  <script th:src="@{/js/main.js}"></script>
 
   </body>
 </html>

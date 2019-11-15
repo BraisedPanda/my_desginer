@@ -6,6 +6,7 @@ import com.braisedpanda.shadow_thief.model.dto.DesignDto;
 import com.braisedpanda.shadow_thief.service.JumpService;
 import com.braisedpanda.shadow_thief.service.DesignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,8 +27,8 @@ public class DesignController {
     JumpService jumpService;
 
 
-    @RequestMapping("my_design")
-    public ModelAndView my_design2(ModelAndView modelAndView,Integer page){
+    @RequestMapping("design/{page}")
+    public ModelAndView my_design2(ModelAndView modelAndView,@PathVariable("page") Integer page){
         Total total  = jumpService.getTotal();
         int design = total.getDesign();
 

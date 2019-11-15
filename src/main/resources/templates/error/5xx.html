@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en"xmlns:th="http://www.thymeleaf.org" >
 <head>
     <meta charset="UTF-8">
-    <title>服务器报错了呢~</title>
-    <link rel="stylesheet" href="error/css/style.css">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>服务器出错了呢~</title>
+    <link rel="stylesheet" th:href="@{/error/css/style.css}">
+    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
 <style>
 
@@ -18,10 +18,10 @@
     <div class="row  justify-content-center">
 
         <div class="col-md-9  text-center">
-            <button type="button" style="margin-top: 480px" class="btn btn-lg btn-success" disabled="disabled">服务器错误~点击图片返回首页</button>
+            <button type="button" style="margin-top: 480px" class="btn btn-lg btn-success" disabled="disabled">服务器出错了呢~点击图片返回首页</button>
 
         </div>
-        <a href="index" id="svgContainer"></a>
+        <a href="/index" id="svgContainer"></a>
     </div>
 
 </div>
@@ -29,11 +29,11 @@
 
 
 
-<script src='error/js/eEjVBX.js'></script>
-<script src='error/js/MvBBBj.js'></script>
-<script src="error/js/script.js"></script>
+<script th:src='@{/error/js/eEjVBX.js}'></script>
+<script th:src='@{/error/js/MvBBBj.js}'></script>
+<script th:src="@{/error/js/script.js}"></script>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
 </body>
 </html>

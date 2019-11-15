@@ -9,6 +9,7 @@ import com.braisedpanda.shadow_thief.service.DesignService;
 import com.braisedpanda.shadow_thief.service.GifService;
 import com.braisedpanda.shadow_thief.service.JumpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -29,8 +30,8 @@ public class GifController {
     JumpService jumpService;
 
 
-    @RequestMapping("my_gif")
-    public ModelAndView my_design2(ModelAndView modelAndView,Integer page){
+    @RequestMapping("animation/{page}")
+    public ModelAndView my_design2(ModelAndView modelAndView,@PathVariable("page") Integer page){
         Total total  = jumpService.getTotal();
         int gif = total.getGif();
 

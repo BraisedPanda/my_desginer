@@ -4,13 +4,14 @@
  });
 
  $("#love_illustration").click(function () {
-     $.get('love_illustration');
+
+     $.get('/love_illustration');
  });
  $("#love_gif").click(function () {
-     $.get('love_gif');
+     $.get('/love_gif');
  });
  $("#love_design").click(function () {
-     $.get('love_design');
+     $.get('/love_design');
  });
 $(".page").mouseenter(function () {
 	

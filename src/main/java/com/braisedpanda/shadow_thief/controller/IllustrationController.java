@@ -9,6 +9,7 @@ import com.braisedpanda.shadow_thief.service.DesignService;
 import com.braisedpanda.shadow_thief.service.IllustrationService;
 import com.braisedpanda.shadow_thief.service.JumpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -29,8 +30,8 @@ public class IllustrationController {
     JumpService jupmService;
 
 
-    @RequestMapping("my_illustration")
-    public ModelAndView my_design2(ModelAndView modelAndView,Integer page){
+    @RequestMapping("illustrations/{page}")
+    public ModelAndView my_design2(ModelAndView modelAndView,@PathVariable("page") Integer page){
         Total total  = jupmService.getTotal();
         int illustration = total.getIllustration();
 

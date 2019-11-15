@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <title>联系方式 - 西艽野 - UI设计师</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" th:href="@{/css/open-iconic-bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/animate.css}">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" th:href="@{/css/owl.carousel.min.css}">
+    <link rel="stylesheet" th:href="@{/css/owl.theme.default.min.css}">
+    <link rel="stylesheet" th:href="@{/css/magnific-popup.css}">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" th:href="@{/css/aos.css}">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" th:href="@{/css/ionicons.min.css}">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" th:href="@{/css/bootstrap-datepicker.css}">
+    <link rel="stylesheet" th:href="@{/css/jquery.timepicker.css}">
 
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" th:href="@{/css/flaticon.css}">
+    <link rel="stylesheet" th:href="@{/css/icomoon.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
       <style>
             body{
                 background: url("images/contact/bg.jpg") ;
@@ -48,11 +48,11 @@
           </button>
           <div class="collapse navbar-collapse" id="ftco-nav">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a href="index" class="nav-link">首页</a></li>
-                  <li class="nav-item "><a href="my_gif" class="nav-link">动图鉴赏</a></li>
-                  <li class="nav-item"><a href="my_illustration" class="nav-link">插画鉴赏</a></li>
-                  <li class="nav-item "><a href="my_design" class="nav-link">设计鉴赏</a></li>
-                  <li class="nav-item active" ><a href="contact" class="nav-link">联系方式</a></li>
+                  <li class="nav-item"><a href="/index" class="nav-link">首页</a></li>
+                  <li class="nav-item "><a href="/animation/1" class="nav-link">动图鉴赏</a></li>
+                  <li class="nav-item"><a href="/illustrations/1" class="nav-link">插画鉴赏</a></li>
+                  <li class="nav-item "><a href="/design/1" class="nav-link">设计鉴赏</a></li>
+                  <li class="nav-item active" ><a href="/contact" class="nav-link">联系方式</a></li>
 
               </ul>
           </div>
