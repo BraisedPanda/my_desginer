@@ -27,7 +27,7 @@
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-light-2" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/index"><span class="flaticon-lotus"></span>西艽野</a>
+	      <a class="navbar-brand" href="index"><span class="flaticon-lotus"></span>西艽野</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -60,25 +60,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 ftco-animate">
-            <h2 class="mb-3">[[${designDetail.title}]]</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[${designDetail.introduction1}]]</p>
+            <h2 class="mb-3">云掌教育App</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实做设计也有一定的技巧，每设计一个东西都不能太乱，不能太简，其实最重要的是懂得思考。随着行业的飞速发展,我们在生活中开始接触越来越多、越来越精美的平面设计作品。这些设计给我们带来不仅是视觉的冲击,而且使我们更加注重产品的品位和文化内涵。从平面设计的要素分析入手,阐述了平面设计的方法以及色彩在平面设计中的重要性。</p>
             <p>
-              <img th:src="${designDetail.url1}"  class="img-fluid" >
+              <img src="/images/my-design/yunzhangapp/test2.png" alt="123123" class="img-fluid">
             </p>
             <p>
-              <img th:src="${designDetail.url2}"  class="img-fluid" th:if="${designDetail.url2} != 0">
-            </p>
-            <p>
-              <img th:src="${designDetail.url3}"  class="img-fluid" th:if="${designDetail.url3} != 0">
-            </p>
-            <p>
-              <img th:src="${designDetail.url4}"  class="img-fluid" th:if="${designDetail.url4} != 0">
+              <img src="/images/my-design/yunzhangapp/test1.png" alt="123123" class="img-fluid">
             </p>
 
-            <p>
-              <img th:src="${designDetail.url5}"  class="img-fluid" th:if="${designDetail.url5} != 0">
-            </p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[${designDetail.introduction2}]]</p>
+
+            <p>岁月很美，在于它的必然流逝；青春很美，在于它必将离开；花朵很美，在于它必然凋零……一切的美好最初的来源都是因为存在时间的短暂，因为会被失去，所以让人在拥有的时候珍惜，在失去以后痛苦难当！因为，对于一直能够拥有的东西，也是会觉得习惯，反而不那样重视，那些自以为不会失去的往往是不被放在心上的。</p>
 
 
           </div> <!-- .col-md-8 -->
@@ -86,9 +78,9 @@
             <div class="sidebar-box ftco-animate">
               <div class="" >
                 <h3 class="heading-2" style="color:#D9BF77">负责范围</h3>
-                <li style="margin-top: 5px"><a href="javascript:void(0)" style="color: black;font-family: 幼圆">[[${designDetail.fuze1}]] </a></li>
-                <li style="margin-top: 5px"><a href="javascript:void(0)" style="color: black;font-family: 幼圆">[[${designDetail.fuze2}]] </a></li>
-                <li style="margin-top: 5px"><a href="javascript:void(0)" style="color: black;font-family: 幼圆">[[${designDetail.fuze3}]] </a></li>
+                <li style="margin-top: 5px"><a href="javascript:void(0)" style="color: black;font-family: 幼圆">Logo设计 </a></li>
+                <li style="margin-top: 5px"><a href="javascript:void(0)" style="color: black;font-family: 幼圆">UI设计 </a></li>
+                <li style="margin-top: 5px"><a href="javascript:void(0)" style="color: black;font-family: 幼圆">交互设计 </a></li>
 
               </div>
             </div>
@@ -105,61 +97,49 @@
             <div class="sidebar-box ftco-animate">
               <h3 class="heading-2" style="color:#D9BF77">快速导航</h3>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" th:href="${designDetail.shref1}" th:style="${designDetail.surl1}"></a>
+                <a class="blog-img mr-4" style="background-image: url('/images/my-design/small_1.png');"></a>
                 <div class="text">
-                  <h3 class="heading"><a th:href="${designDetail.shref1}">[[${designDetail.stitle1}]]</a></h3>
+                  <h3 class="heading"><a href="javascript:void(0)">云掌教育-移动端</a></h3>
                   <div class="meta">
-                    <div><a th:href="${designDetail.shref1}"><span class="icon-star" style="color: #eea2a4"></span> [[${designDetail.sintroduction1}]]</a></div>
+                    <div><a href="javascript:void(0)"><span class="icon-calendar"></span> 8. 3, 2018</a></div>
 
 
                   </div>
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" th:href="${designDetail.shref2}" th:style="${designDetail.surl2}"></a>
+                <a class="blog-img mr-4" style="background-image: url('/images/my-design/small_2.png');"></a>
                 <div class="text">
-                  <h3 class="heading"><a th:href="${designDetail.shref2}">[[${designDetail.stitle2}]]</a></h3>
+                  <h3 class="heading"><a href="javascript:void(0)">云掌教育-网页端</a></h3>
                   <div class="meta">
-                    <div><a th:href="${designDetail.shref2}"><span class="icon-star" style="color: #eea2a4"></span> [[${designDetail.sintroduction2}]]</a></div>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex" >
-                <a class="blog-img mr-4" th:href="${designDetail.shref3}" th:style="${designDetail.surl3}"></a>
-                <div class="text">
-                  <h3 class="heading"><a th:href="${designDetail.shref3}">[[${designDetail.stitle3}]]</a></h3>
-                  <div class="meta">
-                    <div><a th:href="${designDetail.shref3}"><span class="icon-star" style="color: #eea2a4"></span> [[${designDetail.sintroduction3}]]</a></div>
+                    <div><a href="javascript:void(0)"><span class="icon-calendar"></span> 9. 16, 2018</a></div>
 
 
                   </div>
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" th:href="${designDetail.shref4}" th:style="${designDetail.surl4}"></a>
+                <a class="blog-img mr-4" style="background-image: url('/images/my-design/small_3.png');"></a>
                 <div class="text">
-                  <h3 class="heading"><a th:href="${designDetail.shref4}">[[${designDetail.stitle4}]]</a></h3>
+                  <h3 class="heading"><a href="javascript:void(0)">融富教育-公众号</a></h3>
                   <div class="meta">
-                    <div><a th:href="${designDetail.shref4}"><span class="icon-star" style="color: #eea2a4"></span> [[${designDetail.sintroduction4}]]</a></div>
+                    <div><a href="javascript:void(0)"><span class="icon-calendar"></span> 8. 25, 2017</a></div>
 
 
                   </div>
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" th:href="${designDetail.shref5}" th:style="${designDetail.surl5}"></a>
+                <a class="blog-img mr-4" style="background-image: url('/images/my-design/small_4.png');"></a>
                 <div class="text">
-                  <h3 class="heading"><a th:href="${designDetail.shref5}">[[${designDetail.stitle5}]]</a></h3>
+                  <h3 class="heading"><a href="javascript:void(0)">运营设计</a></h3>
                   <div class="meta">
-                    <div><a th:href="${designDetail.shref5}"><span class="icon-star" style="color: #eea2a4"></span> [[${designDetail.sintroduction5}]]</a></div>
+                    <div><a href="javascript:void(0)"><span class="icon-calendar"></span> 4. 6, 2019</a></div>
 
 
                   </div>
                 </div>
               </div>
-
 
             </div>
 
@@ -197,7 +177,7 @@
 
     <div class="side" style="display: none">
       <ul>
-        <li id="yuyueshow"><i class="bgs5" onclick="javascript:window.location.href='/index'"></i>返回首页</li>
+        <li id="yuyueshow"><i class="bgs5" onclick="javascript:window.location.href='index'"></i>返回首页</li>
         <!--<li id="qqonline"><i class="bgs1"></i>QQ咨询</li>-->
 
         <!--<li class="sideewm">-->

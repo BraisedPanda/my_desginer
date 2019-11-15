@@ -54,10 +54,7 @@ public class JumpController {
     public ModelAndView about(){
         return new ModelAndView("demo");
     }
-    @RequestMapping("/yunzhangApp")
-    public ModelAndView yunzhangApp(){
-        return new ModelAndView("design/yunzhangApp");
-    }
+
 
 
 
