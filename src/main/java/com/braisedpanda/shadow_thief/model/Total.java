@@ -31,5 +31,8 @@ public class Total implements Serializable{
     private Integer design;
     @Column(name = "gif")
     private Integer gif;
-
+    @Column(name = "timestamps")
+    private String timestamps;
+    @Column(name = "ipaddr")
+    private String ipaddr;
 }

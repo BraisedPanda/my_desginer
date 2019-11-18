@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public interface JumpService {
     Total getTotal();
 
-    void addVisitors();
+    void addVisitors(String ip);
 
     void love_illustration();
 

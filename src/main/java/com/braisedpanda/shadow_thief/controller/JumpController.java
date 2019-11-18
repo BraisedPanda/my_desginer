@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @program: my_designer
  * @description:
@@ -22,8 +24,30 @@ public class JumpController {
     JumpService designService;
 
     @RequestMapping("")
-    public ModelAndView toIndex(ModelAndView modelAndView){
-        designService.addVisitors();
+    public ModelAndView toIndex(ModelAndView modelAndView,HttpServletRequest request){
+        /**
+         * @Description: 获取ip地址
+         * @author: chenzhen
+         * @Date: 2019/11/18 0018
+         */
+        String ip = request.getHeader("x-forwarded-for");
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("WL-Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("HTTP_CLIENT_IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getRemoteAddr();
+        }
+
+        designService.addVisitors(ip);
         Total total  = designService.getTotal();
         int likes = total.getIllustration()+total.getGif()+total.getDesign();
         int visitors = total.getVisitors();
@@ -37,8 +61,31 @@ public class JumpController {
     }
 
     @RequestMapping("/index")
-    public ModelAndView index(ModelAndView modelAndView){
-        designService.addVisitors();
+    public ModelAndView index(ModelAndView modelAndView, HttpServletRequest request){
+        /**
+        * @Description: 获取ip地址
+        * @author: chenzhen
+        * @Date: 2019/11/18 0018
+        */
+        String ip = request.getHeader("x-forwarded-for");
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("WL-Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("HTTP_CLIENT_IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getRemoteAddr();
+        }
+
+
+        designService.addVisitors(ip);
         Total total  = designService.getTotal();
         int visitors = total.getVisitors();
         int likes = total.getIllustration()+total.getGif()+total.getDesign();

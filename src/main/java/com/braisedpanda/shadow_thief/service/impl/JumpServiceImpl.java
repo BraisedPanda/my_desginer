@@ -6,6 +6,10 @@ import com.braisedpanda.shadow_thief.service.JumpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @program: my_designer
  * @description:
@@ -24,9 +28,13 @@ public class JumpServiceImpl implements JumpService {
     }
 
     @Override
-    public void addVisitors() {
+    public void addVisitors(String ip) {
         Total total = designMapper.selectByPrimaryKey(1);
         total.setVisitors(total.getVisitors()+1);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String date = format.format(new Date());
+        total.setTimestamps(date);
+        total.setIpaddr(ip);
         designMapper.updateByPrimaryKey(total);
 
     }
